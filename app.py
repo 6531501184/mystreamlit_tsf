@@ -37,7 +37,7 @@ if upload_file is not None:
     
     #prediction
     preds = model.predict(x)
-    top_preds = decode_predictions(preds, top=3)[0]
+    top_preds = decode_predictions(preds, top=5)[0]
     
     #display  prediction
     st.subheader("Preddiction:")
